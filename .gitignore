@@ -1,0 +1,6 @@
+# .gitignore
+/docs/
+/sec-edgar-filings/
+/venv/
+/.vscode/
+.env
