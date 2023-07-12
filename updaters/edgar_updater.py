@@ -23,7 +23,7 @@ def process_reports(form_types, symbols, start_date, root_folder):
     for form_type in form_types:
         for symbol in symbols:
             # Download reports
-            cik = cik_pairs[symbol]
+            cik = cik_pairs[symbol.lower()]
             full_cik = '0'*(10-len(cik))+cik
             dl.get(form_type, cik, after=start_date)
 
